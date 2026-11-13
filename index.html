@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
-  <title>*SC | IR Pitchdeck - ir pitchdeck</title>
-  <meta name="description" content="*SC (SISTAR Company) - IR Pitchdeck : Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting." />
+  <title>*SC | IR Pitchdeck — Master Institutional Investment Memorandum</title>
+  <meta name="description" content="*SC (SISTAR Company) Master IR Pitchdeck: Institutional investment conviction hub, zero sunk-capex holding architecture, tri-tier investment vehicles, 3-year valuation trajectory, and dual-track legal firewalls." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "*SC | IR Pitchdeck",
-    "description": "Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.",
+    "@type": "TechArticle",
+    "headline": "*SC Institutional Investment Memorandum & Master Pitchdeck",
+    "description": "Comprehensive institutional memorandum detailing the *SC holding company architecture: zero sunk-capex model, tri-tier investment vehicles (HoldCo, Project SPVs, Regional JVs), 3-year financial model, Qubit Algorithm due-diligence, and dual-return unit economics.",
+    "author": {
+      "@type": "Organization",
+      "name": "*SC (SISTAR Company)",
+      "url": "https://sistarcompany.com"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "*SC - SISTAR COMPANY",
@@ -19,7 +24,21 @@
     }
   }
   </script>
-  <style>html,body{background:linear-gradient(to right,#f0acf7,#acf7f0,#f7f0ac);margin:0;padding:0;}body.sc-nav-open{padding-left:236px;}body.sc-nav-folded{padding-left:64px;}@media(max-width:768px){body.sc-nav-open,body.sc-nav-folded{padding-left:0!important;}}</style>
+  <style>
+    html, body {
+      background: linear-gradient(to right, #f0acf7, #acf7f0, #f7f0ac);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.sc-nav-open { padding-left: 236px; }
+    body.sc-nav-folded { padding-left: 64px; }
+    @media (max-width: 768px) {
+      body.sc-nav-open, body.sc-nav-folded { padding-left: 0 !important; }
+    }
+  </style>
   <script>
     (function() {
       var p = location.pathname.replace(/\\/g, "/");
@@ -33,193 +52,925 @@
     })();
   </script>
   <style>
-    .sc-auto-page {
+    .sc-monograph {
       box-sizing: border-box;
       width: 100%;
-      max-width: min(1360px, 95%);
-      padding: clamp(40px, 5vh, 68px) clamp(24px, 4.5vw, 72px) 120px;
-      font-family: "Inter", sans-serif;
-      color: #0f172a;
+      max-width: min(1380px, 95%);
+      margin: 0 auto;
+      padding: clamp(36px, 5vh, 68px) clamp(24px, 5vw, 76px) 120px;
+      background: transparent;
     }
-    main h1, main h2, main h3, main h4,
-    main p, main .sc-lead, main .sc-p,
-    main .sc-route, main .sc-sec,
-    main .sc-card-line, main .sc-card-emerald {
-      margin-left: 0 !important;
-      padding-left: 0 !important;
-      text-indent: 0 !important;
-      text-align: left !important;
+    .sc-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 36px;
+      border-bottom: 1.5px solid rgba(15, 23, 42, 0.15);
     }
     .sc-route {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.88rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #475569;
-      letter-spacing: 0.04em;
-      margin: 0 0 18px 0;
+      margin: 0;
+      letter-spacing: 0.03em;
       text-transform: lowercase;
     }
-    .sc-sec {
-      padding: 52px 0;
-      border-bottom: 1.5px solid rgba(15, 23, 42, 0.14);
+    .sc-chapter {
+      margin-bottom: 56px;
+      padding: 12px 0;
+      background: transparent;
     }
-    .sc-sec:last-of-type { border-bottom: none; }
-    .sc-kicker {
-      display: inline-block;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.78rem;
+    .sc-chapter-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid #0f172a;
+    }
+    .sc-chapter-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #0f5132;
-      background: rgba(22, 135, 101, 0.15);
-      padding: 5px 12px;
-      border-radius: 4px;
-      margin: 0 0 14px 0;
     }
-    .sc-h1 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: -0.025em;
-      line-height: 1.12;
-      margin: 0 0 14px 0;
-    }
-    .sc-sub {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+    .sc-chapter-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #0f5132;
-      line-height: 1.4;
-      margin: 0 0 24px 0;
+      color: #64748b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-    .sc-h2 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    .sc-doc-h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.05rem);
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px 0;
+    }
+    .sc-chapter-h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.22;
+      letter-spacing: -0.025em;
       margin: 0 0 18px 0;
     }
-    .sc-h3 {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1.15rem;
+    .sc-sub-h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 10px 0;
       line-height: 1.35;
     }
     .sc-lead {
-      font-size: clamp(1.04rem, 1.22vw, 1.14rem);
-      line-height: 1.82;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 500;
       color: #1e293b;
-      margin: 0 0 34px 0;
+      line-height: 1.82;
+      margin: 0 0 24px 0;
     }
     .sc-p {
-      font-size: 0.97rem;
-      line-height: 1.8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.99rem;
       color: #334155;
-      margin: 0;
+      line-height: 1.82;
+      margin: 0 0 16px 0;
     }
-    /* Spacious 2-Column (2x2) Grid Layout */
-    .sc-grid-2x2 {
+    .sc-exec-hero {
+      background: linear-gradient(135deg, #090d16 0%, #0f172a 55%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: clamp(28px, 3.8vw, 44px);
+      margin: 22px 0 32px 0;
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.25);
+    }
+    .sc-exec-hero h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 14px 0;
+      line-height: 1.3;
+    }
+    .sc-exec-hero p {
+      font-size: 1.02rem;
+      color: #e2e8f0;
+      line-height: 1.78;
+      margin: 0 0 24px 0;
+    }
+    .sc-kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    @media (max-width: 900px) {
+      .sc-kpi-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .sc-kpi-strip { grid-template-columns: 1fr; }
+    }
+    .sc-kpi-cell {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .sc-kpi-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: #4ade80;
+      margin-bottom: 4px;
+    }
+    .sc-kpi-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+    .sc-grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 48px;
-      row-gap: 38px;
-      margin-top: 28px;
+      gap: 28px;
+      margin: 24px 0;
     }
-    @media (max-width: 760px) {
-      .sc-grid-2x2 { grid-template-columns: 1fr; }
+    .sc-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 24px 0;
     }
-    .sc-card-line {
-      padding-top: 20px !important;
-      border-top: 2px solid rgba(15, 23, 42, 0.24) !important;
+    @media (max-width: 860px) {
+      .sc-grid-2, .sc-grid-3 { grid-template-columns: 1fr; }
     }
-    .sc-card-emerald {
-      padding-top: 20px !important;
-      border-top: 3px solid #168765 !important;
+    .sc-panel {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-top: 4px solid #0f172a;
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
-    .sc-num-label {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 0.82rem;
+    .sc-panel.emerald { border-top-color: #0f5132; background: #f8fafc; }
+    .sc-panel.blue { border-top-color: #1d4ed8; }
+    .sc-panel.purple { border-top-color: #6d28d9; }
+    .sc-panel-kicker {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #0f5132;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #0f5132;
       margin-bottom: 8px;
     }
+    .sc-panel.blue .sc-panel-kicker { color: #1d4ed8; }
+    .sc-panel.purple .sc-panel-kicker { color: #6d28d9; }
+    .sc-math-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin: 22px 0;
+      border-left: 4px solid #10b981;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+    }
+    .sc-math-code {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 7px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 8px 0 12px 0;
+    }
+    .sc-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+      background: #ffffff;
+    }
+    .sc-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: left;
+      padding: 14px 18px;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .sc-table td {
+      padding: 15px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.94rem;
+      color: #1e293b;
+      line-height: 1.65;
+      vertical-align: top;
+    }
+    .sc-table tr:last-child td { border-bottom: none; }
+    .sc-table tr:nth-child(even) td { background: #f8fafc; }
     .sc-callout {
-      margin-top: 38px;
-      padding: 20px 24px !important;
-      border-left: 4px solid #0f5132;
-      background: rgba(255, 255, 255, 0.34);
-      font-size: 0.98rem;
-      font-weight: 500;
-      color: #0f172a;
-      line-height: 1.72;
+      background: #f0fdf4;
+      border-left: 5px solid #0f5132;
+      border-radius: 0 12px 12px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+    .sc-callout-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin-bottom: 8px;
+    }
+    .sc-svg-frame {
+      width: 100%;
+      margin: 28px 0;
+      padding: 24px;
+      box-sizing: border-box;
+      border-top: 3px solid #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      border-left: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .sc-svg-frame svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .sc-svg-caption {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 12px;
+      letter-spacing: 0.02em;
     }
     @media print {
-      html, body, main, .sc-auto-page { background: #ffffff !important; padding-left: 0 !important; opacity: 1 !important; }
+      html, body, .sc-monograph { background: #ffffff !important; padding-left: 0 !important; }
       #sc-left-nav, .sc-nav-toggle { display: none !important; }
-      .sc-card-line, .sc-card-emerald, .sc-callout { break-inside: avoid !important; page-break-inside: avoid !important; }
+      .sc-panel, .sc-table-wrap, .sc-svg-frame, .sc-callout, .sc-math-box { break-inside: avoid !important; }
     }
   </style>
 </head>
 <body class="sc-nav-open">
-  <main class="sc-auto-page">
-    <p class="sc-route">ir pitchdeck</p>
+  <main class="sc-monograph">
+    <header class="sc-top-bar">
+      <p class="sc-route">ir pitchdeck</p>
+    </header>
 
-    <section class="sc-sec" style="padding-top: 12px;">
-      <div><span class="sc-kicker">INSTITUTIONAL IR, PARTNERSHIP &amp; MEDIA GATEWAY</span></div>
-      <h1 class="sc-h1">*SC - IR Pitchdeck</h1>
-      <p class="sc-sub">Zero Sunk-Capex Investment Architecture, 20-Track B2B Offer Sheets &amp; Unmanned Media Broadcasting.</p>
-      <p class="sc-lead"><strong>IR Pitchdeck</strong> serves as the institutional interface connecting global investors, manufacturing partners, regional wholesalers, and media audiences with the <strong>*SC (SISTAR Company)</strong> universe - backed by 100% completed cloud/AI infrastructure and verifiable daily NAV auditing.</p>
+    <!-- CHAPTER 1 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 01 &bull; Executive Memorandum</span>
+        <span class="sc-chapter-tag">Domain Root Gateway &bull; Master Portal Overview</span>
+      </div>
+      <h1 class="sc-doc-h1">*SC — IR Pitchdeck: Master Investment Conviction Hub</h1>
+      <p class="sc-lead"><strong>*SC (SISTAR Company / Signal Star Universe)</strong> is a quantum-inspired AI venture studio, enterprise cognitive operating system, and cross-border commercial holding company. Built upon <strong>20+ years of on-the-ground international business development, trade execution, and regulatory mastery</strong>, *SC bridges real-world physical commerce with proprietary autonomous multi-agent intelligence (*SC AI Centers International) and the groundbreaking <strong>Qubit Algorithm&trade;</strong>. This Master IR Pitchdeck delivers institutional due-diligence clarity across our capitalization structure, tri-tier investment vehicles, and multi-domain financial trajectory.</p>
 
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <div class="sc-num-label">01 &bull; WHAT IT IS (CORE DEFINITION)</div>
-          <h2 class="sc-h3">3-Year Financial Trajectory &amp; Unit Economics</h2>
-          <p class="sc-p">Targets Year 1 Revenue of KRW 2.0B (20% OPM) &rarr; Year 2 KRW 7.0B (35% OPM) &rarr; Year 3 KRW 15.0B (35% OPM), supported by an LTV/CAC ratio of 17.5x, 2.8-month payback, and 60-75% blended gross margin.</p>
-        </div>
-
-        <div class="sc-card-line">
-          <div class="sc-num-label">02 &bull; WHY WE DO IT (MARKET OPPORTUNITY)</div>
-          <h2 class="sc-h3">20-Track Standardized B2B Offer Sheets</h2>
-          <p class="sc-p">Ready-to-execute commercial packages covering Container Volume Deals (First 3 Shipments 50% Deposit), SISTAR SOD (Zero-Inventory Dropshipping), Offline Wholesalers, Influencers I-III, and S1-S6 Franchises.</p>
-        </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">03 &bull; HOW IT WORKS (OPERATIONAL MECHANISM)</div>
-          <h2 class="sc-h3">SISTAR Studio &amp; The SIGNAL STAR Post</h2>
-          <p class="sc-p">Unmanned media engine producing 10+ shoppable videos, automated newsletters, and global industry briefs daily via RSS/Make/Gemini pipelines - driving zero-CAC organic traffic across all portals.</p>
-        </div>
-
-        <div class="sc-card-emerald">
-          <div class="sc-num-label">04 &bull; REVENUE MODEL &amp; EXPECTED ROI</div>
-          <h2 class="sc-h3">IATA &amp; IADA Global Governance</h2>
-          <p class="sc-p">Anchored by the International AI-Trade Association (IATA) and International AI-Data Association (IADA), establishing global standards for AI-driven cross-border trade and data sovereignty.</p>
+      <div class="sc-exec-hero">
+        <h3>Institutional Investment Thesis: Zero Sunk-Capex &amp; Compounding Dual-Returns</h3>
+        <p>Unlike early-stage ventures that burn capital engineering speculative codebases or establishing unproven supply lines, *SC presents a 100% completed cloud and AI infrastructure. Institutional capital is not allocated to build software; it is deployed as high-velocity working capital, trade guarantee liquidity, and regional market expansion capital across 8 international bases.</p>
+        <div class="sc-kpi-strip">
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">KRW 15.0B</div>
+            <div class="sc-kpi-desc">Year 3 Target Gross Revenue at 35% Operating Profit Margin</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">17.5x</div>
+            <div class="sc-kpi-desc">Institutional LTV/CAC Ratio backed by Zero-CAC Media Leads</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">2.8 Mos</div>
+            <div class="sc-kpi-desc">Working-Capital Payback Cycle per Cross-Border Shipment</div>
+          </div>
+          <div class="sc-kpi-cell">
+            <div class="sc-kpi-val">8 Jurisdictions</div>
+            <div class="sc-kpi-desc">Active Global Bases: Korea, SG, US, Indo, VN, India, CN, JP</div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="sc-sec">
-      <div><span class="sc-kicker">STRATEGIC SYNERGY &amp; GOVERNANCE</span></div>
-      <h2 class="sc-h2">Integration Within the Signal Star Universe (*SC)</h2>
-      <div class="sc-grid-2x2">
-        <div class="sc-card-line">
-          <h3 class="sc-h3">1. Core Architecture &amp; Technical Integration</h3>
-          <p class="sc-p">Connected across our 12-domain semantic web matrix and 8 international bases (Korea SCK, Indonesia SCI, Singapore SCS, USA SCU, Vietnam SCV, India SCIND, China SCC, Japan SCJ). Every workflow is tracked transparently via standardized Google Workspace Console, Monthly Sales, and Dashboard ledgers.</p>
+      <div class="sc-grid-3">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Pillar 01 &bull; Domain Mastery</div>
+          <h3 class="sc-sub-h3">20+ Years Real Trade Moat</h3>
+          <p class="sc-p">Algorithms without domain knowledge fail when confronted with ASEAN customs, local OTC regulations, and fragmented supply chains. *SC's intelligence core encodes two decades of lived cross-border trade execution into production agents.</p>
         </div>
-        <div class="sc-card-line">
-          <h3 class="sc-h3">2. Risk Firewall &amp; Settlement Security</h3>
-          <p class="sc-p">Protected by the *SC Triple Control Towers and Dual-Track Legal Firewall (isolating SC Index holding IP from Biz Galaxy commercial liabilities). Transactions leverage 3-Month Rolling Purchasing Forecasts (RPF), K-SURE export credit guarantees, and automated 70/30 PG webhook split settlements.</p>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Pillar 02 &bull; Quantum Mechanics</div>
+          <h3 class="sc-sub-h3">The Qubit Algorithm&trade;</h3>
+          <p class="sc-p">Liberates cross-border commerce from classical linear friction ($A \to B \to C$) into quantum superposition ($t=0$ simultaneous settlement) and quantum entanglement (one task, multiple autonomous commercial outcomes).</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Pillar 03 &bull; Capital Safety</div>
+          <h3 class="sc-sub-h3">Dual-Track Legal Firewall</h3>
+          <p class="sc-p">Holding company IP, algorithms, and core domain assets are held strictly in SC Index, insulated from commercial trading liabilities. Trade is backed by K-SURE credit guarantees and 50% cash deposits.</p>
         </div>
       </div>
-      <div class="sc-callout"><strong>*SC - SISTAR COMPANY | One Spark, Infinite Galaxifying:</strong> Powered by the Qubit Algorithm&trade;, *SC intelligence-core, Scarlet AI, Qubit Biz, and the Biz Galaxy constellation.<br/>Corporate Portal: https://sistarcompany.com &bull; Executive Contact: DennyKu (denniiku@sistarcompany.com)</div>
-    </section>
+    </article>
+
+    <!-- CHAPTER 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 02 &bull; Macro Financial Trajectory</span>
+        <span class="sc-chapter-tag">3-Year Financial Model &amp; Dual-Return Valuation</span>
+      </div>
+      <h2 class="sc-chapter-h2">3-Year Financial Trajectory &amp; Unit Economics</h2>
+      <p class="sc-lead">The *SC economic model provides investors with <strong>Dual-Return Economics</strong>: long-term equity capital appreciation driven by holding NAV growth, combined with short-cycle, dividend-distributive quarterly cash yield generated by self-liquidating trade finance pools.</p>
+
+      <div class="sc-math-box">
+        <div style="font-size: 0.88rem; font-weight: 700; text-transform: uppercase; color: #4ade80; letter-spacing: 0.08em; margin-bottom: 6px;">Enterprise Valuation &amp; Dual-Return Formulation</div>
+        <div class="sc-math-code">V_{HoldCo} = V_{IP} + \sum_{j=1}^{12} NAV(D_j) + \int_0^T \left[ \sum_{m=1}^{M} \frac{CF_{trade,m}(t) \cdot (1 - \gamma_{reinvest})}{(1 + r)^t} \right] dt</div>
+        <p class="sc-p" style="color: #cbd5e1; margin-bottom: 0;">Where $V_{IP}$ represents the audited proprietary value of the Qubit Algorithm&trade; and cognitive AI codebase; $NAV(D_j)$ is the net asset value of each of the 12 domain subsidiaries; $CF_{trade,m}$ is the cashflow generated across the 20 B2B offer sheets; $\gamma_{reinvest}$ is the retained earning ratio (40%); and $r$ is the risk-adjusted hurdle rate ($8.5\%$).</p>
+      </div>
+
+      <div class="sc-grid-3">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">Phase I &bull; Year 1 Execution</div>
+          <h3 class="sc-sub-h3">KRW 2.0B / 20% OPM</h3>
+          <p class="sc-p">Focuses on high-margin vet medical supplies (SISTAR MedIX) and specialized pet nutrition (SISPet) deployed across Korea (SCK) and Indonesia (SCI). Establishes initial franchise cash flows and K-SURE backed trade financing lines.</p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Phase II &bull; Year 2 Scale</div>
+          <h3 class="sc-sub-h3">KRW 7.0B / 35% OPM</h3>
+          <p class="sc-p">Scale enabled by unmanned media traffic loops (SISTAR Studio), 20-track B2B offer sheets, and ASEAN expansion into Vietnam (SCV) and Singapore (SCS). Operating leverage reduces administrative overhead to under 12% of gross revenue.</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Phase III &bull; Year 3 Dominance</div>
+          <h3 class="sc-sub-h3">KRW 15.0B / 35% OPM</h3>
+          <p class="sc-p">Global multi-hub maturity across 8 international bases. SaaS enterprise licensing from Qubit ERP and AI Trade clearing commissions compound with container volume syndicates to generate KRW 5.25B in annual operating cashflow.</p>
+        </div>
+      </div>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Financial &amp; Unit Economic Metric</th>
+              <th>Year 1 (Base Year)</th>
+              <th>Year 2 (Expansion)</th>
+              <th>Year 3 (Institutional Scale)</th>
+              <th>Analytical Commentary &amp; Benchmarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Gross Merchandise Volume (GMV)</strong></td>
+              <td>KRW 3.20B ($2.40M)</td>
+              <td>KRW 11.20B ($8.40M)</td>
+              <td>KRW 24.00B ($18.00M)</td>
+              <td>Cross-border container deals, wholesale orders, and franchise throughput</td>
+            </tr>
+            <tr>
+              <td><strong>Recognized Net Revenue</strong></td>
+              <td>KRW 2.00B ($1.50M)</td>
+              <td>KRW 7.00B ($5.25M)</td>
+              <td>KRW 15.00B ($11.25M)</td>
+              <td>Net recognized revenue after consignment adjustments and merchant splits</td>
+            </tr>
+            <tr>
+              <td><strong>Blended Gross Margin (%)</strong></td>
+              <td>62.5%</td>
+              <td>68.0%</td>
+              <td>74.5%</td>
+              <td>Expansion driven by proprietary ODM formulations and direct factory tie-ups</td>
+            </tr>
+            <tr>
+              <td><strong>Operating Profit Margin (OPM)</strong></td>
+              <td>20.0% (KRW 400M)</td>
+              <td>35.0% (KRW 2.45B)</td>
+              <td>35.0% (KRW 5.25B)</td>
+              <td>Sustained high margins through zero-marginal-cost multi-agent automation</td>
+            </tr>
+            <tr>
+              <td><strong>Customer Acquisition Cost (CAC)</strong></td>
+              <td>KRW 850,000</td>
+              <td>KRW 520,000</td>
+              <td>KRW 380,000</td>
+              <td>Declines rapidly as SISTAR Studio organic media generation scales</td>
+            </tr>
+            <tr>
+              <td><strong>Customer Lifetime Value (LTV)</strong></td>
+              <td>KRW 10.5M</td>
+              <td>KRW 8.2M</td>
+              <td>KRW 6.6M</td>
+              <td>Reflects multi-year recurring container contracts and franchise fees</td>
+            </tr>
+            <tr>
+              <td><strong>LTV / CAC Ratio</strong></td>
+              <td>12.4x</td>
+              <td>15.8x</td>
+              <td>17.5x</td>
+              <td>Significantly surpasses global enterprise SaaS/trade benchmarks (3x-5x)</td>
+            </tr>
+            <tr>
+              <td><strong>Cash Conversion Cycle (CCC)</strong></td>
+              <td>84 Days</td>
+              <td>72 Days</td>
+              <td>58 Days</td>
+              <td>50% advance deposits and automated 70/30 webhook splits eliminate credit lag</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 3 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 03 &bull; Investment Structuring</span>
+        <span class="sc-chapter-tag">Tri-Tier Institutional Investment Vehicles</span>
+      </div>
+      <h2 class="sc-chapter-h2">Tri-Tier Flexible Institutional Investment Vehicles</h2>
+      <p class="sc-lead">To accommodate diverse institutional risk profiles, liquidity mandates, and regulatory boundaries, *SC provides three distinct, legally segregated investment vehicles: <strong>HoldCo Master Equity</strong>, <strong>Vertical Project SPVs</strong>, and <strong>Self-Liquidating Trade Finance Pools</strong>.</p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Vehicle Tier &amp; Structure</th>
+              <th>Target Institutional Investor</th>
+              <th>Minimum Ticket &amp; Horizon</th>
+              <th>Return Profile &amp; Yield Mechanism</th>
+              <th>Governance, Security &amp; Firewalls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tier 1: Master HoldCo Equity</strong><br/>(Series Seed / Series A)</td>
+              <td>Sovereign Wealth Funds, Global VC Funds, Multi-Family Offices</td>
+              <td>KRW 2.0B &ndash; KRW 5.0B<br/>(4 to 6 Year Horizon)</td>
+              <td>Long-term capital appreciation; share in all 12 domains, algorithms, and global base dividends. Target 10x-25x MOIC upon NASDAQ/KRX IPO.</td>
+              <td>Board seat representation, pro-rata rights, information rights, SC Index holding firewall protection.</td>
+            </tr>
+            <tr>
+              <td><strong>Tier 2: Vertical Project SPVs</strong><br/>(Dedicated Subsidiary Equity)</td>
+              <td>Sector-Specific Strategic VCs (Pharma, Vet, AI SaaS, E-Commerce)</td>
+              <td>KRW 500M &ndash; KRW 1.5B<br/>(2 to 4 Year Horizon)</td>
+              <td>Direct equity ownership in dedicated high-growth verticals (e.g., SISTAR MedIX SPV or SISPet SPV). 20%-35% preferred dividend distribution.</td>
+              <td>Segregated Delaware or Singapore SPV, direct project revenue lien, no liability contagion to HoldCo.</td>
+            </tr>
+            <tr>
+              <td><strong>Tier 3: Regional JV Operating Cos</strong><br/>(ASEAN &amp; Global Hubs)</td>
+              <td>Local In-Country Conglomerates &amp; Distribution Partners</td>
+              <td>KRW 300M &ndash; KRW 1.0B<br/>(3 to 5 Year Horizon)</td>
+              <td>Co-ownership of localized operating entity (e.g., SCI Indonesia or SCV Vietnam). Local market dividends + exclusive franchise territory rights.</td>
+              <td>Local legal registration, dual-signature banking, joint management committee, shared IP licensing.</td>
+            </tr>
+            <tr>
+              <td><strong>Tier 4: Trade Finance Liquidity Pool</strong><br/>(Short-Cycle Debt Syndicate)</td>
+              <td>Private Debt Funds, Credit Unions, High-Net-Worth Syndicates</td>
+              <td>KRW 200M &ndash; KRW 500M<br/>(90 to 180 Day Rolling)</td>
+              <td>12.0% &ndash; 15.5% annualized net yield. Self-liquidating senior secured return paid per completed container shipment.</td>
+              <td>Senior lien on inventory and receivables, K-SURE export insurance wrap, 50% cash buyer deposit lock.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- CHAPTER 4: BESPOKE SVG 1 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 04 &bull; Visual Architecture 01</span>
+        <span class="sc-chapter-tag">Bespoke Inline Architectural Vector</span>
+      </div>
+      <h2 class="sc-chapter-h2">Tri-Tier Capital Allocation &amp; Cash Flow Waterfall</h2>
+      <p class="sc-lead">The diagram below details the structural insulation and cash flow waterfall across *SC Master HoldCo, Vertical Project SPVs, and Self-Liquidating Trade Finance Pools, demonstrating complete capital protection.</p>
+
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gPitchHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a"/>
+              <stop offset="100%" stop-color="#064e3b"/>
+            </linearGradient>
+            <linearGradient id="gTier1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1e293b"/>
+              <stop offset="100%" stop-color="#0f172a"/>
+            </linearGradient>
+            <linearGradient id="gTier2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0284c7"/>
+              <stop offset="100%" stop-color="#0369a1"/>
+            </linearGradient>
+            <linearGradient id="gTier3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981"/>
+              <stop offset="100%" stop-color="#047857"/>
+            </linearGradient>
+            <linearGradient id="gTier4" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#7e22ce"/>
+              <stop offset="100%" stop-color="#581c87"/>
+            </linearGradient>
+            <filter id="pBoxShadow" x="-6%" y="-6%" width="112%" height="116%" filterUnits="userSpaceOnUse">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+            </filter>
+          </defs>
+
+          <!-- Canvas Background -->
+          <rect x="0" y="0" width="960" height="340" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+          <!-- Top Holding Master Box -->
+          <g transform="translate(40, 25)">
+            <rect x="0" y="0" width="880" height="70" rx="10" fill="url(#gPitchHeader)" filter="url(#pBoxShadow)"/>
+            <text x="440" y="28" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">*SC MASTER HOLDING COMPANY (SC INDEX HOLDING IP)</text>
+            <text x="440" y="50" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0" text-anchor="middle">Total IP Custody &bull; 100% Core Algorithms &bull; Zero Operating Liabilities &bull; Multi-Jurisdictional Corporate Shield</text>
+          </g>
+
+          <!-- 3 Vertical Distribution Channels (SPVs & Pools) -->
+          <!-- Channel 1: HoldCo Master Equity -->
+          <g transform="translate(40, 115)">
+            <rect x="0" y="0" width="270" height="195" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.8" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="270" height="34" rx="8" fill="url(#gTier1)"/>
+            <text x="135" y="22" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">TIER 1: MASTER HOLDCO EQUITY</text>
+            
+            <rect x="12" y="44" width="246" height="42" rx="5" fill="#f8fafc" stroke="#e2e8f0"/>
+            <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#0f172a">Target: Global Institutional VCs</text>
+            <text x="20" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">KRW 2.0B - 5.0B Preferred Stock</text>
+
+            <rect x="12" y="94" width="246" height="42" rx="5" fill="#f8fafc" stroke="#e2e8f0"/>
+            <text x="20" y="110" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#0f172a">Upside: Global 12-Domain NAV</text>
+            <text x="20" y="125" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Direct share in all IP royalties &amp; IPO</text>
+
+            <rect x="12" y="144" width="246" height="42" rx="5" fill="#ecfdf5" stroke="#a7f3d0"/>
+            <text x="20" y="160" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#065f46">Risk Firewall: Maximum</text>
+            <text x="20" y="175" font-family="'Inter', sans-serif" font-size="9" fill="#047857">100% isolated from commercial default</text>
+          </g>
+
+          <!-- Channel 2: Project SPVs & Regional JVs -->
+          <g transform="translate(345, 115)">
+            <rect x="0" y="0" width="270" height="195" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.8" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="270" height="34" rx="8" fill="url(#gTier2)"/>
+            <text x="135" y="22" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">TIER 2: PROJECT SPVS &amp; REGIONAL JVS</text>
+
+            <rect x="12" y="44" width="246" height="42" rx="5" fill="#f0f9ff" stroke="#bae6fd"/>
+            <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#0369a1">Target: Strategic &amp; Regional Partners</text>
+            <text x="20" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#0284c7">KRW 500M - 1.5B per Vertical</text>
+
+            <rect x="12" y="94" width="246" height="42" rx="5" fill="#f0f9ff" stroke="#bae6fd"/>
+            <text x="20" y="110" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#0369a1">Upside: Dedicated Vertical Dividends</text>
+            <text x="20" y="125" font-family="'Inter', sans-serif" font-size="9" fill="#0284c7">SISTAR MedIX, SISPet, Jakarta Hub</text>
+
+            <rect x="12" y="144" width="246" height="42" rx="5" fill="#f0f9ff" stroke="#bae6fd"/>
+            <text x="20" y="160" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#0369a1">Structure: Segregated Legal SPV</text>
+            <text x="20" y="175" font-family="'Inter', sans-serif" font-size="9" fill="#0284c7">Ring-fenced liabilities &amp; local asset lien</text>
+          </g>
+
+          <!-- Channel 3: Trade Finance Liquidity Pool -->
+          <g transform="translate(650, 115)">
+            <rect x="0" y="0" width="270" height="195" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="2" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="270" height="34" rx="8" fill="url(#gTier3)"/>
+            <text x="135" y="22" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">TIER 3: TRADE FINANCE POOLS</text>
+
+            <rect x="12" y="44" width="246" height="42" rx="5" fill="#ecfdf5" stroke="#a7f3d0"/>
+            <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#065f46">Target: Debt &amp; Cash Yield Funds</text>
+            <text x="20" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#047857">KRW 200M - 500M 90-Day Rolling</text>
+
+            <rect x="12" y="94" width="246" height="42" rx="5" fill="#ecfdf5" stroke="#a7f3d0"/>
+            <text x="20" y="110" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#065f46">Upside: 12.0% - 15.5% Net Yield</text>
+            <text x="20" y="125" font-family="'Inter', sans-serif" font-size="9" fill="#047857">Quarterly self-liquidating cash payouts</text>
+
+            <rect x="12" y="144" width="246" height="42" rx="5" fill="#ecfdf5" stroke="#a7f3d0"/>
+            <text x="20" y="160" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#065f46">Security: 50% Cash Lock + K-SURE</text>
+            <text x="20" y="175" font-family="'Inter', sans-serif" font-size="9" fill="#047857">Senior secured receivables priority</text>
+          </g>
+
+          <!-- Connecting Arrows from HoldCo to Tiers -->
+          <path d="M 175 95 L 175 115" fill="none" stroke="#0f172a" stroke-width="2.5"/>
+          <polygon points="171,110 175,115 179,110" fill="#0f172a"/>
+
+          <path d="M 480 95 L 480 115" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+          <polygon points="476,110 480,115 484,110" fill="#0284c7"/>
+
+          <path d="M 785 95 L 785 115" fill="none" stroke="#10b981" stroke-width="2.5"/>
+          <polygon points="781,110 785,115 789,110" fill="#10b981"/>
+        </svg>
+        <div class="sc-svg-caption">Figure 2.1: *SC Tri-Tier Institutional Capital Allocation Topology, illustrating the segregation between holding equity, dedicated project SPVs, and rolling self-liquidating trade finance facilities.</div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 5 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 05 &bull; Commercial Execution Engine</span>
+        <span class="sc-chapter-tag">20-Track B2B Offer Sheets &amp; S1-S6 Franchises</span>
+      </div>
+      <h2 class="sc-chapter-h2">The 20-Track Standardized B2B Commercial Engine</h2>
+      <p class="sc-lead">To ensure that capital investments generate immediate operational returns without contract customization lag, *SC has engineered 20 standardized, programmatic B2B commercial offer tracks. Spanning container-level international procurement to hyper-localized micro-sachet packaging, these ready-to-execute commercial frameworks allow *SC to onboard enterprise clients in minutes.</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">High-Volume Procurement &bull; Container Deals</div>
+          <h3 class="sc-sub-h3">Tracks 01-03: Container Volume &amp; Consolidation Pools</h3>
+          <p class="sc-p">Structured for national distributors and regional clinic consortia. Requires 50% non-refundable cash deposit upon order placement for the first three consecutive shipments. Hedged via K-SURE export guarantees, ensuring zero manufacturer default exposure and negative working capital requirements.</p>
+        </div>
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Zero-Inventory Fulfillment &bull; E-Commerce</div>
+          <h3 class="sc-sub-h3">Tracks 04-05: SISTAR SOD (SISTAR On-Demand)</h3>
+          <p class="sc-p">Enables cross-border e-commerce power merchants to list and sell *SC pharmaceutical and nutritional products with zero upfront inventory commitment. Direct API integration debits customer payment at checkout and triggers automated bonded warehouse pick-and-pack fulfillment.</p>
+        </div>
+      </div>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Regional Distribution &bull; Creator KOLs</div>
+          <h3 class="sc-sub-h3">Tracks 06-09: Wholesalers &amp; Influencer Tiers I-III</h3>
+          <p class="sc-p">Aligns provincial wholesalers with defined territorial exclusivity and empowers Tier I-III digital creators with co-branded private label lines. Influencers monetize engaged audiences with turn-key product formulation and fulfillment backed by *SC.</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Global Network Scaling &bull; Franchises</div>
+          <h3 class="sc-sub-h3">Tracks 10-15: S1-S6 Global Franchise Matrix</h3>
+          <p class="sc-p">From S1 individual entrepreneurial operators and S2 district master franchises to S6 institutional co-investment syndicates, our franchise architecture rapidly scales brand presence across ASEAN, India, and the Americas with zero holding debt.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 6: BESPOKE SVG 2 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 06 &bull; Visual Architecture 02</span>
+        <span class="sc-chapter-tag">Quantum Compounding &amp; 12-Domain Synergistic Flywheel</span>
+      </div>
+      <h2 class="sc-chapter-h2">Quantum Business Flywheel: 12-Domain Valuation Engine</h2>
+      <p class="sc-lead">The diagram below demonstrates how the Qubit Algorithm&trade; coordinates data, liquidity, and operational execution across all 12 domains and 8 global bases, transforming each transaction into compounded enterprise value.</p>
+
+      <div class="sc-svg-frame">
+        <svg viewBox="0 0 960 340" class="notranslate" translate="no" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gFlyCenter" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0f172a"/>
+              <stop offset="100%" stop-color="#064e3b"/>
+            </linearGradient>
+            <linearGradient id="gOrb1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#0284c7"/>
+            </linearGradient>
+            <linearGradient id="gOrb2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4ade80"/>
+              <stop offset="100%" stop-color="#16a34a"/>
+            </linearGradient>
+            <linearGradient id="gOrb3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#c084fc"/>
+              <stop offset="100%" stop-color="#9333ea"/>
+            </linearGradient>
+            <linearGradient id="gOrb4" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fb923c"/>
+              <stop offset="100%" stop-color="#ea580c"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Outer Container -->
+          <rect x="0" y="0" width="960" height="340" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+          <!-- Center Nucleus: Qubit Algorithm & Intelligence Core -->
+          <circle cx="480" cy="170" r="85" fill="url(#gFlyCenter)" stroke="#4ade80" stroke-width="3" filter="url(#pBoxShadow)"/>
+          <text x="480" y="152" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">QUBIT ALGORITHM&trade;</text>
+          <text x="480" y="170" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">&amp; INTELLIGENCE CORE</text>
+          <text x="480" y="188" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Quantum Superposition (t=0)</text>
+          <text x="480" y="200" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Multi-Agent Entanglement</text>
+
+          <!-- Quadrant 1: Enterprise AI Core (Top Left) -->
+          <g transform="translate(60, 40)">
+            <rect x="0" y="0" width="260" height="100" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="260" height="26" rx="8" fill="url(#gOrb1)"/>
+            <text x="130" y="18" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">1. ENTERPRISE AI &amp; COGNITIVE OS</text>
+            <text x="12" y="44" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#0f172a">Qubit ERP &bull; Company RAG &bull; Exo-Brain</text>
+            <text x="12" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">Tier-1 enterprise infrastructure automating data,</text>
+            <text x="12" y="74" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">multi-currency accounting, and warehouse robotics.</text>
+            <text x="12" y="88" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#0284c7">Generates recurring high-margin SaaS licensing.</text>
+          </g>
+          <!-- Line to Center -->
+          <line x1="320" y1="110" x2="410" y2="140" stroke="#0284c7" stroke-width="2" stroke-dasharray="3,3"/>
+
+          <!-- Quadrant 2: Bio-Health & Vet Specialties (Top Right) -->
+          <g transform="translate(640, 40)">
+            <rect x="0" y="0" width="260" height="100" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="260" height="26" rx="8" fill="url(#gOrb2)"/>
+            <text x="130" y="18" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">2. BIO-HEALTH &amp; SPECIALTIES</text>
+            <text x="12" y="44" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#0f172a">SISTAR MedIX &bull; SISPet &bull; Auto-Formulator</text>
+            <text x="12" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">Proprietary clinical ODM formulations and AI</text>
+            <text x="12" y="74" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">prescription tools for veterinary hospital networks.</text>
+            <text x="12" y="88" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#16a34a">Delivers 60%-75% blended gross margins.</text>
+          </g>
+          <!-- Line to Center -->
+          <line x1="640" y1="110" x2="550" y2="140" stroke="#16a34a" stroke-width="2" stroke-dasharray="3,3"/>
+
+          <!-- Quadrant 3: Global Trade & Commerce (Bottom Left) -->
+          <g transform="translate(60, 200)">
+            <rect x="0" y="0" width="260" height="100" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="1.5" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="260" height="26" rx="8" fill="url(#gOrb4)"/>
+            <text x="130" y="18" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">3. DIRECT AI COMMERCE &amp; TRADE</text>
+            <text x="12" y="44" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#0f172a">Scarlet AI &bull; Volume Deals &bull; Buy4Me</text>
+            <text x="12" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">Autonomous trading marketplace platform connecting</text>
+            <text x="12" y="74" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">manufacturers, wholesalers, and retail clinics.</text>
+            <text x="12" y="88" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#ea580c">2.8-month rapid cash turnover cycle.</text>
+          </g>
+          <!-- Line to Center -->
+          <line x1="320" y1="230" x2="410" y2="200" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+          <!-- Quadrant 4: Media & Hyper-Growth GTM (Bottom Right) -->
+          <g transform="translate(640, 200)">
+            <rect x="0" y="0" width="260" height="100" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#pBoxShadow)"/>
+            <rect x="0" y="0" width="260" height="26" rx="8" fill="url(#gOrb3)"/>
+            <text x="130" y="18" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">4. MEDIA &amp; GTM MULTIPLIERS</text>
+            <text x="12" y="44" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#0f172a">SISTAR Studio &bull; The SIGNAL STAR Post</text>
+            <text x="12" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">Unmanned multi-modal media engine producing 10+</text>
+            <text x="12" y="74" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">daily shoppable videos and B2B briefs.</text>
+            <text x="12" y="88" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#9333ea">Drives 17.5x LTV/CAC at zero ad spend.</text>
+          </g>
+          <!-- Line to Center -->
+          <line x1="640" y1="230" x2="550" y2="200" stroke="#9333ea" stroke-width="2" stroke-dasharray="3,3"/>
+        </svg>
+        <div class="sc-svg-caption">Figure 2.2: The *SC Quantum Business Flywheel, illustrating how the centralized Qubit Algorithm and multi-agent intelligence core continuously compound value across enterprise AI, bio-health, international commerce, and unmanned media broadcast.</div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 7 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 07 &bull; NAV Attribution &amp; Governance</span>
+        <span class="sc-chapter-tag">12-Domain Net Asset Value &amp; Global Standards</span>
+      </div>
+      <h2 class="sc-chapter-h2">12-Domain NAV Attribution &amp; Global Governance</h2>
+      <p class="sc-lead">Every domain in the *SC semantic matrix is not a promotional landing page, but an operational business unit generating standalone gross margins and strategic synergy. The table below delineates the institutional NAV attribution across the entire ecosystem.</p>
+
+      <div class="sc-table-wrap">
+        <table class="sc-table">
+          <thead>
+            <tr>
+              <th>Domain Path &amp; Strategic Role</th>
+              <th>Operational Function &amp; Technology Stack</th>
+              <th>Direct Revenue Model &amp; Monetization</th>
+              <th>3-Year Target Valuation Contribution</th>
+              <th>Breakeven Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>01. sc-sistarcompany</strong><br/>Corporate Flagship &amp; Global Alliances</td>
+              <td>Institutional identity, 8 global bases coordination, and sovereign joint venture governance.</td>
+              <td>Holding royalties, trademark licensing, and strategic JV equity dividends.</td>
+              <td>KRW 12.0B (HoldCo Core)</td>
+              <td>Achieved (Day 1)</td>
+            </tr>
+            <tr>
+              <td><strong>02. qubit-algorithm</strong><br/>Theoretical &amp; Propulsion Engine</td>
+              <td>Formal mathematical proofs, wave-particle business modeling, and academic publications.</td>
+              <td>Algorithmic optimization IP licensing and enterprise patent monetization.</td>
+              <td>KRW 8.5B (IP Vault)</td>
+              <td>Achieved</td>
+            </tr>
+            <tr>
+              <td><strong>03. intelligence-core</strong><br/>Core AI Vault &amp; Cognitive Engine</td>
+              <td>*SC AI Centers International, Qubit ERP, Company RAG, and Exo-Brain physical AI.</td>
+              <td>Enterprise Cognitive OS licensing, API subscription fees, and private cloud hosting.</td>
+              <td>KRW 18.0B (SaaS Core)</td>
+              <td>Achieved</td>
+            </tr>
+            <tr>
+              <td><strong>04. scarlet-ai</strong><br/>AI Commerce &amp; Trade Marketplace</td>
+              <td>Autonomous multi-agent trade platform, 24/7 sales bots, Volume Deals, and Buy4Me.</td>
+              <td>2.5% - 5.0% platform take-rate, automated BNPL financing fees, and merchant subscriptions.</td>
+              <td>KRW 14.0B (Marketplace)</td>
+              <td>Month 6</td>
+            </tr>
+            <tr>
+              <td><strong>05. qubit-biz</strong><br/>Cosmo Seed&trade; Model Showcase</td>
+              <td>Open business model showcase, cross-project entanglement, and 4-way settlement offsetting.</td>
+              <td>Commercial licensing of Cosmo Seed blueprints and cross-border partnership fees.</td>
+              <td>KRW 6.0B (Synergy Hub)</td>
+              <td>Achieved</td>
+            </tr>
+            <tr>
+              <td><strong>06. biz-galaxy</strong><br/>Industry Verticals Constellation</td>
+              <td>SISTAR MedIX, SISPet, SISPharm, Mind Company, Aquasis, SisAyurvedic.</td>
+              <td>Direct physical product manufacturing and container sales (60%-75% margin).</td>
+              <td>KRW 22.0B (Commerce Core)</td>
+              <td>Achieved (Active Cashflow)</td>
+            </tr>
+            <tr>
+              <td><strong>07. biz-hub</strong><br/>Co-Creation &amp; Shared Value Hub</td>
+              <td>Auto-Formulator, Joint ODM manufacturing, Rp 1,320 Micro-Sachets, Space Sharing.</td>
+              <td>Shared-manufacturing facility margins, micro-sachet packaging distribution.</td>
+              <td>KRW 5.5B (Shared Value)</td>
+              <td>Month 9</td>
+            </tr>
+            <tr>
+              <td><strong>08. challengers</strong><br/>International Family &amp; Vibe Working</td>
+              <td>Global talent onboarding, S1-S6 franchise network, Vibe Working profit-sharing portal.</td>
+              <td>Franchise onboarding fees, recurring management royalties, and education packages.</td>
+              <td>KRW 4.5B (Network Equity)</td>
+              <td>Achieved</td>
+            </tr>
+            <tr>
+              <td><strong>09. partnership</strong><br/>Business Partners Motivation Gateway</td>
+              <td>B2B manufacturer onboarding, private label ODM matching, and clinical trial coordination.</td>
+              <td>Supplier onboarding retainers, volume procurement brokerage commissions.</td>
+              <td>KRW 3.5B (B2B Hub)</td>
+              <td>Achieved</td>
+            </tr>
+            <tr>
+              <td><strong>10. ir-pitchdeck</strong><br/>Institutional Conviction Hub</td>
+              <td>Institutional investor deal room, daily NAV audit data room, and capital syndicate clearing.</td>
+              <td>SPV structuring management fees, syndicated carry, and institutional equity funding.</td>
+              <td>N/A (Holding Anchor)</td>
+              <td>Operational</td>
+            </tr>
+            <tr>
+              <td><strong>11. biz-directory</strong><br/>Open B2B Proposal &amp; Directory</td>
+              <td>Category-by-category business proposals and verified corporate listings.</td>
+              <td>Enterprise verified directory listings, priority B2B matchmaking placement.</td>
+              <td>KRW 2.5B (Directory Asset)</td>
+              <td>Achieved</td>
+            </tr>
+            <tr>
+              <td><strong>12. media</strong><br/>Content Forge &amp; Media Archive</td>
+              <td>SISTAR Studio unmanned production engine, The SIGNAL STAR Post global journal.</td>
+              <td>Zero-CAC customer acquisition, programmatic syndication, sponsored briefings.</td>
+              <td>KRW 7.0B (Media Moat)</td>
+              <td>Achieved</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel">
+          <div class="sc-panel-kicker">Self-Regulation &bull; Trade Interoperability</div>
+          <h3 class="sc-sub-h3">IATA (International AI-Trade Association)</h3>
+          <p class="sc-p">Anchors binding machine-to-machine trade protocols, algorithmic customs validation, and automated escrow smart contracts across ASEAN and East Asia, eliminating multi-week administrative delays.</p>
+        </div>
+        <div class="sc-panel blue">
+          <div class="sc-panel-kicker">Data Sovereignty &bull; Merchant IP Shield</div>
+          <h3 class="sc-sub-h3">IADA (International AI-Data Association)</h3>
+          <p class="sc-p">Guarantees that partner clinics and regional distributors retain sovereign ownership over their patient and commercial data, preventing platform monopolies from weaponizing vendor metrics.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- CHAPTER 8 -->
+    <article class="sc-chapter">
+      <div class="sc-chapter-meta">
+        <span class="sc-chapter-num">Chapter 08 &bull; Risk Firewalls &amp; Due Diligence</span>
+        <span class="sc-chapter-tag">Dual-Track Insulation &amp; Institutional Data Room</span>
+      </div>
+      <h2 class="sc-chapter-h2">Institutional Risk Firewalls &amp; Due Diligence</h2>
+      <p class="sc-lead">To satisfy the most rigorous institutional and venture capital due-diligence standards, *SC enforces a multi-layered legal, technical, and financial defense architecture designed to withstand geopolitical volatility, currency fluctuations, and operational risks.</p>
+
+      <div class="sc-grid-2">
+        <div class="sc-panel emerald">
+          <div class="sc-panel-kicker">Dual-Track Legal Insulation</div>
+          <h3 class="sc-sub-h3">IP Holding vs. Commercial Galaxy Separation</h3>
+          <p class="sc-p">All proprietary software, neural weights, algorithms, and registered trademarks reside permanently in <strong>SC Index</strong> (our IP holding vehicle). Operational trading, customer contracts, and shipping commitments are conducted through independent, ring-fenced operating companies (Biz Galaxy verticals and regional JVs). No operational dispute, product liability claim, or freight delay can compromise the holding company IP or parent equity.</p>
+        </div>
+        <div class="sc-panel purple">
+          <div class="sc-panel-kicker">Financial Security &bull; Trade De-Risking</div>
+          <h3 class="sc-sub-h3">RPF, K-SURE &amp; Automated Webhook Settlement</h3>
+          <p class="sc-p">Commercial transactions operate on 3-Month Rolling Purchasing Forecasts (RPF). Production commences only upon receipt of a 50% non-refundable cash deposit on initial shipments. Remaining balances are covered by <strong>K-SURE (Korea Trade Insurance Corporation)</strong> export credit guarantees. Automated payment gateway webhooks enforce instant 70/30 revenue splits, ensuring suppliers are paid immediately while *SC retains its margin with zero collection latency.</p>
+        </div>
+      </div>
+
+      <div class="sc-callout">
+        <div class="sc-callout-title">*SC &mdash; SISTAR COMPANY | Institutional Deal Room &amp; Executive Directives</div>
+        <p class="sc-p" style="margin-bottom: 0;"><strong>One Spark, Infinite Galaxifying &mdash; Beyond Linear Trade, Quantum Value Entanglement.</strong><br/>
+        Institutional Data Room Access, Cap Table Verification &amp; SPV Inquiries:<br/>
+        Executive Managing Director: <strong>DennyKu</strong> (<a href="mailto:denniiku@sistarcompany.com" style="color: #0f5132; font-weight: 700; text-decoration: underline;">denniiku@sistarcompany.com</a>)<br/>
+        Corporate Holding Flagship: <a href="https://sistarcompany.com" target="_blank" rel="noopener noreferrer" style="color: #0f5132; font-weight: 700; text-decoration: underline;">https://sistarcompany.com</a> &bull; Global Operations Hubs: Korea &bull; Singapore &bull; United States &bull; Indonesia &bull; Vietnam &bull; India &bull; China &bull; Japan</p>
+      </div>
+    </article>
   </main>
 </body>
 </html>
